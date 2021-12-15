@@ -1,5 +1,13 @@
 import Hewan from "../models/Hewan.js";
 
+export const startHewan = async (req, res) => {
+  try {
+    res.send("Selamat Datang");
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export const getHewan = async (req, res) => {
   try {
     const hewan = await Hewan.findAll();
