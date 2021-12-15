@@ -2,7 +2,7 @@ import Hewan from "../models/Hewan.js";
 
 export const startHewan = async (req, res) => {
   try {
-    res.send("Selamat Datang");
+    res.send("Selamat Datang wahai para Pengunjung yang budiman");
   } catch (err) {
     console.log(err);
   }
