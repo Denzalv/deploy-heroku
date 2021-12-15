@@ -9,7 +9,7 @@ import {
   deleteHewan,
 } from "../controllers/Hewan.js";
 const router = express.Router();
-router.get("/", startHewan)
+router.get("/", startHewan);
 // Route get semua Hewan
 router.get("/hewan", getHewan);
 // Route get Hewan by id
