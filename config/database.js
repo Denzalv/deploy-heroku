@@ -1,11 +1,13 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize({
-  dialect: "mysql",
-  host: "sql6.freemysqlhosting.net",
-  database: "sql6459132",
-  username: "sql6459132",
-  password: "ppAHZzWRCj"
-});
+const db = new Sequelize(
+  `${process.env.DATABASE}`,
+  `${process.env.USERNAME}`,
+  `${process.env.PASSWORD}`,
+  {
+    host: `${process.env.HOST}`,
+    dialect: "mysql",
+  }
+);
 
 export default db;
